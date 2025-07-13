@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | BubbleVibe</title>
+  <meta http-equiv="refresh" content="2;url=home.html">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green-main: #b9fbc0;
+      --green-dark: #1A3C34;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--green-dark);
+      color: var(--text-color);
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 span {
+      color: var(--green-main);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to <span>BubbleVibe</span>!</h1>
+</body>
+</html>
+
